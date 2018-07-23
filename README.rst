@@ -64,4 +64,4 @@ When using ``occ`` command, PHP 7.1 should be enabled inside the environment.
 
 Invocation example: ::
 
-  su - apache -s /bin/bash -c "source /opt/rh/rh-php71/enable; cd /usr/share/nextcloud/; php occ ldap:show-config"
+  su - apache -s /bin/bash -c "source /opt/rh/php72/enable; cd /usr/share/nextcloud/; php occ ldap:show-config"
