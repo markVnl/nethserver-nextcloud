@@ -1,6 +1,6 @@
 {
   my $vhost = $nextcloud{'VirtualHost'} || '';
-  my $php_port = ${'arm-php72-php-fpm'}{'TCPPorts'} || '9001';
+  my $php_port = ${'php72-php-fpm'}{'TCPPorts'} || '9001';
 
   my $config = '
   <Directory "/usr/share/nextcloud">
