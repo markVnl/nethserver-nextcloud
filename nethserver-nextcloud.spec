@@ -17,6 +17,8 @@ Requires: samba-client
 Requires: php72-php-smbclient
 Requires: php72-php-opcache
 Requires: php72-php-pecl-apcu
+Requires: php72-php-pear
+Requires: php72-php-pecl-zip
 
 %description
 NethServer Nextcloud files and configuration.
