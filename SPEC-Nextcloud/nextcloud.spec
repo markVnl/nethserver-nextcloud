@@ -14,7 +14,7 @@
 Summary: Nextcloud package
 Name: nextcloud
 Version: 13.0.4
-Release: 1arm%{?dist}
+Release: 2arm%{?dist}
 License: GPL
 Source: https://download.nextcloud.com/server/releases/nextcloud-%{version}.tar.bz2
 Source1: nextcloud.conf
@@ -97,7 +97,7 @@ cp %{SOURCE1} %{buildroot}/etc/httpd/conf.d
 
 
 %changelog
-* Sun Jul 29 2018 Mark Verlinde <mark.verlinde@gmail.com> - 13.0.4-1a
+* Sun Jul 29 2018 Mark Verlinde <mark.verlinde@gmail.com> - 13.0.4-2arm
 - Adjust to PHP72 SCL for armhfp
 
 * Mon Jun 11 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 13.0.4-1
