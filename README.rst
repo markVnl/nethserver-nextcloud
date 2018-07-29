@@ -1,6 +1,6 @@
-====================
-nethserver-nextcloud
-====================
+===============================
+nethserver-nextcloud for armhfp
+===============================
 
 This package can be installed before or after any user provider like nethserver-dc
 and nethserver-directory.
@@ -60,7 +60,7 @@ The database is automatically saved by ``nethserver-mysql``.
 OCC
 ===
 
-When using ``occ`` command, PHP 7.1 should be enabled inside the environment.
+When using ``occ`` command, PHP 7.2 should be enabled inside the environment.
 
 Invocation example: ::
 

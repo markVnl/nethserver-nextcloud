@@ -1,7 +1,7 @@
 Summary: NethServer Nextcloud configuration
 Name: nethserver-nextcloud
 Version: 1.2.2
-Release: 1%{?dist}
+Release: 1arm%{?dist}
 License: GPL
 Source: %{name}-%{version}.tar.gz
 BuildArch: noarch
@@ -46,6 +46,9 @@ mkdir -p %{buildroot}/var/lib/nethserver/nextcloud
 
 
 %changelog
+* Sun Jul 29 2018 Mark Verlinde <mark.verlinde@gmail.com> - 1.2.2-1arm
+- Adjust to PHP72 SCL for armhfp
+
 * Thu Jun 14 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.2.2-1
 - Improve SSL configuration - NethServer/dev#5509
 - Upgrade nextcloud  to 13.0.4 - NethServer/dev#5523
