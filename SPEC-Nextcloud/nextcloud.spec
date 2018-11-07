@@ -13,7 +13,7 @@
 
 Summary: Nextcloud package
 Name: nextcloud
-Version: 14.0.0
+Version: 14.0.3
 Release: 1arm%{?dist}
 License: GPL
 Source: https://download.nextcloud.com/server/releases/nextcloud-%{version}.tar.bz2
@@ -87,6 +87,7 @@ cp %{SOURCE1} %{buildroot}/etc/httpd/conf.d
 %attr(0755,%{nc_user},%{nc_group}) %{nc_dir}/ocs*
 %attr(0755,%{nc_user},%{nc_group}) %{nc_dir}/*.php
 %attr(0755,%{nc_user},%{nc_group}) %{nc_dir}/AUTHORS
+%attr(0755,%{nc_user},%{nc_group}) %{nc_dir}/COPYING
 %attr(0755,%{nc_user},%{nc_group}) %{nc_dir}/index.html
 %attr(0755,%{nc_user},%{nc_group}) %{nc_dir}/robots.txt
 %attr(0644,%{nc_user},%{nc_group}) %{nc_dir}/.htaccess
@@ -98,6 +99,18 @@ cp %{SOURCE1} %{buildroot}/etc/httpd/conf.d
 
 
 %changelog
+* Wed Nov 07 2018 Mark Verlinde <mark.verlinde@gmail.com> -  14.0.3-1arm
+- Adjust to PHP72 SCL for armhfp
+
+* Mon Oct 15 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 14.0.3-1
+- Update to release 14.0.3
+
+* Thu Oct 11 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 14.0.2-1
+- Update to release 14.0.2
+
+* Wed Sep 26 2018 Alessandro Polidori <alessandro.polidori@nethesis.it> - 14.0.1-1
+- Update to release 14.0.1
+
 * Thu Sep 6 2018 Mark Verlinde <mark.verlinde@gmail.com> - 14.0.0-1arm
 - Adjust to PHP72 SCL for armhfp
 

@@ -1,6 +1,6 @@
 Summary: NethServer Nextcloud configuration
 Name: nethserver-nextcloud
-Version: 1.2.4
+Version: 1.2.7
 Release: 1arm%{?dist}
 License: GPL
 Source: %{name}-%{version}.tar.gz
@@ -9,7 +9,7 @@ URL: %{url_prefix}/%{name}
 
 BuildRequires: nethserver-devtools
 
-Requires: nextcloud >= 14.0.0
+Requires: nextcloud >= 14.0.3
 Requires: nethserver-httpd
 Requires: nethserver-mysql
 Requires: nethserver-arm-php72-php-fpm
@@ -46,11 +46,23 @@ mkdir -p %{buildroot}/var/lib/nethserver/nextcloud
 
 
 %changelog
-* Thu Sep 06 2018 Mark Verlinde <mark.verlinde@gmail.com> - 1.2.4-1arm
+* Wed Nov 07 2018 Mark Verlinde <mark.verlinde@gmail.com> - 1.2.7-1arm
 - Nextcloud: upgrade to 13.0.6 with PHP72 SCL for armhfp
+
+* Wed Oct 17 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.2.7-1
+- Nextcloud: upgrade to 14.0.3 - NethServer/dev#5604
+
+* Wed Sep 26 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.2.6-1
+- Nextcloud: upgrade to 14.0.1 - nethserver/dev#5588
+
+* Tue Sep 25 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.2.5-1
+- Nextcloud: upgrade to 14.0.0 - nethserver/dev#5578
 
 * Thu Sep 06 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.2.4-1
 - Nextcloud: upgrade to 13.0.6 - NethServer/dev#5577
+
+* Thu Sep 06 2018 Mark Verlinde <mark.verlinde@gmail.com> - 1.2.4-1arm
+- Nextcloud: upgrade to 13.0.6 with PHP72 SCL for armhfp
 
 * Wed Aug 01 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.2.3-1
 - Nextcloud: upgrade to 13.0.5 - NethServer/dev#5556
