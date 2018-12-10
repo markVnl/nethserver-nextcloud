@@ -1,6 +1,6 @@
-===============================
-nethserver-nextcloud for armhfp
-===============================
+============================
+nethserver-nextcloud for arm
+============================
 
 This package can be installed before or after any user provider like nethserver-dc
 and nethserver-directory.
