@@ -1,6 +1,6 @@
 Summary: NethServer Nextcloud configuration
 Name: nethserver-nextcloud
-Version: 1.3.0
+Version: 1.4.0
 Release: 1arm%{?dist}
 License: GPL
 Source: %{name}-%{version}.tar.gz
@@ -46,6 +46,12 @@ mkdir -p %{buildroot}/var/lib/nethserver/nextcloud
 
 
 %changelog
+* Thu Dec 20 2018 Mark Verlinde <mark.verlinde@gmail.com> - 1.4.0-1arm
+- Nextcloud: upgrade to 15.0.0 with PHP72 SCL for arm
+
+* Thu Dec 20 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.4.0-1
+- Nextcloud: upgrade to 15.0.0 - NethServer/dev#5674
+
 * Mon Dec 10 2018 Mark Verlinde <mark.verlinde@gmail.com> - 1.3.0-1arm
 - Nextcloud: upgrade to 14.0.4 with PHP72 SCL for arm
 
